@@ -1,1 +1,6 @@
 # OC_Project07_API_DASHBOARD
+
+
+FASTAPI DEPLOYEMENT : http://35.180.66.152/docs
+
+
