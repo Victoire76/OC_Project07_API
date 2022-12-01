@@ -68,6 +68,18 @@ def get_prediction(id_client : int):
     else:
         res = {"This ID doesn't exist"}
         return(res) 
+    
+    @app.get('/new_predict/')
+    def get_prediction2(id_client : int):
+        check = check_id_pred(id_client)
+        if check:
+            data_client = data_api[data_api.index== id_client]
+            #y_pred = model.predict(data_client)
+            y_proba_default = model.predict_proba(data_client)[:, 1][0]    
+            return( y_proba_default)
+        else:
+        res = {"This ID doesn't exist"}
+        return(res)
 
 @app.get('/shap/')
 def get_shap(id_client : int):
