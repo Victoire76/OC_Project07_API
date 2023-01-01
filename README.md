@@ -1,6 +1,6 @@
-# OC_Project07_API_DASHBOARD
+# OC_Projet07_ Déploiment d'API
 
 
-FASTAPI DEPLOYEMENT : http://35.180.66.152/docs
+Network URL: http://35.180.66.152/docs
 
 
